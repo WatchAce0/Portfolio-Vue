@@ -1,26 +1,50 @@
+/* eslint-disable vue/no-unused-components */
+
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div
+    class="min-h-screen bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100"
+  >
+    <StickyNavbar />
+    <TheBackground id="background" />
+    <MySkills id="skills" />
+    <MyProjects id="projects" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import StickyNavbar from "./components/StickyNavbar.vue";
+import MyProjects from "./components/MyProjects.vue"; // Renamed from Projects
+import MySkills from "./components/MySkills.vue"; // Renamed from Skills
+import TheBackground from "./components/TheBackground.vue"; // Renamed from Background
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    StickyNavbar,
+    MyProjects,
+    MySkills,
+    TheBackground,
+  },
+  data() {
+    return {
+      darkMode: false,
+    };
+  },
+  watch: {
+    darkMode(newValue) {
+      if (newValue) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    },
+  },
+  mounted() {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      this.darkMode = true;
+    }
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
