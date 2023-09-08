@@ -1,6 +1,6 @@
 <template>
   <section id="background" class="">
-    <div :class="{ 'bg-white dark:bg-gray-900': isDark }">
+    <div :class="{ 'bg-white dark:bg-black': isDark }">
       <h2 class="text-4xl text-center font-bold mb-8">Image Goes Here</h2>
       <p class="text-center text-xl p-8">
         Hey, I'm Joe DiGioia a Full Stack Developer and Graphic Designer from

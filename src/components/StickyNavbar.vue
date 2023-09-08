@@ -1,54 +1,19 @@
 <template>
-  <div :class="{ 'sticky top-0 z-50 bg-white dark:bg-gray-900': isSticky }">
-    <nav class="container mx-auto py-4 space-x-4">
-      <!-- Desktop Menu -->
-      <div class="hidden md:flex justify-between items-center w-full">
-        <div class="space-x-4">
-          <a v-scroll-to="'#home'" href="#">Home</a>
-          <a v-scroll-to="'#projects'" href="#">Projects</a>
-          <a v-scroll-to="'#skills'" href="#">Skills</a>
-          <a v-scroll-to="'#background'" href="#">Background</a>
-        </div>
-        <div class="flex items-center space-x-2">
-          <span class="text-sm">{{ darkButtonText }}</span>
-          <label for="darkModeSwitch" class="switch">
-            <input
-              type="checkbox"
-              id="darkModeSwitch"
-              v-model="$root.darkMode"
-            />
+  <div :class="{ 'top-0 z-50 bg-white dark:bg-black': isSticky }">
+    <nav class="container mx-auto py-4 flex justify-between items-center">
+      <!-- Title -->
+      <div class="m-4">ByJoe.io</div>
 
-            <span class="slider round"></span>
-          </label>
-        </div>
-      </div>
-
-      <!-- Mobile Menu Button -->
-      <div class="md:hidden">
-        <button @click="menuOpen = !menuOpen">
-          <!-- Hamburger icon (you can replace this with a proper SVG or icon) -->
-          ☰
-        </button>
-      </div>
-
-      <!-- Mobile Dropdown Menu -->
-      <div v-if="menuOpen" class="md:hidden flex flex-col space-y-2 mt-4">
-        <a v-scroll-to="'#home'" href="#">Home</a>
-        <a v-scroll-to="'#projects'" href="#">Projects</a>
-        <a v-scroll-to="'#skills'" href="#">Skills</a>
-        <a v-scroll-to="'#background'" href="#">Background</a>
-        <div class="flex items-center space-x-2">
-          <span class="text-sm">{{ darkButtonText }}</span>
-          <label for="darkModeSwitchMobile" class="switch">
-            <input
-              type="checkbox"
-              id="darkModeSwitchMobile"
-              v-model="$root.darkMode"
-            />
-
-            <span class="slider round"></span>
-          </label>
-        </div>
+      <!-- Dark Mode Switch -->
+      <div class="flex items-center m-4 space-x-2">
+        <label for="darkModeSwitch" class="switch">
+          <input type="checkbox" id="darkModeSwitch" v-model="$root.darkMode" />
+          <span class="slider round">
+            <span class="mode-indicator">{{
+              $root.darkMode ? "🌙" : "☀️"
+            }}</span>
+          </span>
+        </label>
       </div>
     </nav>
   </div>
@@ -114,7 +79,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #ec9c51;
   transition: 0.4s;
 }
 
@@ -130,7 +95,7 @@ export default {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #04243d;
 }
 
 input:checked + .slider:before {
@@ -144,5 +109,22 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* Add this to style the mode indicator inside the switch */
+.mode-indicator {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.4s;
+  font-size: 14px;
+}
+
+input:checked + .slider .mode-indicator {
+  left: 8px; /* Adjust as needed */
+}
+
+input:not(:checked) + .slider .mode-indicator {
+  right: 8px; /* Adjust as needed */
 }
 </style>

@@ -2,12 +2,13 @@
 
 <template>
   <div
-    class="min-h-screen bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100"
+    class="min-h-screen bg-gray-100 text-gray-900 dark:bg-black dark:text-gray-100"
   >
     <StickyNavbar />
     <TheBackground id="background" />
     <MySkills id="skills" />
     <MyProjects id="projects" />
+    <TheFooter />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import StickyNavbar from "./components/StickyNavbar.vue";
 import MyProjects from "./components/MyProjects.vue"; // Renamed from Projects
 import MySkills from "./components/MySkills.vue"; // Renamed from Skills
 import TheBackground from "./components/TheBackground.vue"; // Renamed from Background
+import TheFooter from "./components/TheFooter.vue";
 
 export default {
   components: {
@@ -23,6 +25,7 @@ export default {
     MyProjects,
     MySkills,
     TheBackground,
+    TheFooter,
   },
   data() {
     return {

@@ -1,5 +1,5 @@
 <template>
-  <section id="projects" class="py-8 bg-gray-100 dark:bg-gray-900">
+  <section id="projects" class="py-8 bg-gray-100 dark:bg-black">
     <div class="container mx-auto font-semibold text-shadow-lg text-center">
       <h2 class="text-4xl font-bold mb-8 text-gray-900 dark:text-gray-100">
         Projects
@@ -28,9 +28,6 @@
     <div
       class="container mx-auto font-semibold text-shadow-lg text-center mt-8"
     >
-      <h2 class="text-4xl font-bold mb-8 text-gray-900 dark:text-gray-100">
-        Open API Projects
-      </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         <a :href="project3.link" target="_blank" rel="noopener noreferrer">
           <div
