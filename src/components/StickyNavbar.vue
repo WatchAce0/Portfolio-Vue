@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ 'top-0 z-50 bg-white dark:bg-black': isSticky }">
+  <div :class="{ 'top-0 z-50  dark:bg-black': isSticky }">
     <nav class="container mx-auto py-4 flex justify-between items-center">
       <!-- Title -->
       <div class="m-4">ByJoe.io</div>

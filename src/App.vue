@@ -6,8 +6,9 @@
   >
     <StickyNavbar />
     <TheBackground id="background" />
-    <MySkills id="skills" />
+
     <MyProjects id="projects" />
+    <MySkills id="skills" />
     <TheFooter />
   </div>
 </template>
