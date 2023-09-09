@@ -6,30 +6,6 @@
       <p>
         &copy; {{ new Date().getFullYear() }} Joe DiGioia. All Rights Reserved.
       </p>
-      <div class="mt-4 space-x-4">
-        <a
-          href="https://github.com/yourusername"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-gray-400 hover:text-white"
-        >
-          GitHub
-        </a>
-        <a
-          href="https://linkedin.com/in/yourusername"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-gray-400 hover:text-white"
-        >
-          LinkedIn
-        </a>
-        <a
-          href="mailto:youremail@example.com"
-          class="text-gray-400 hover:text-white"
-        >
-          Email
-        </a>
-      </div>
     </div>
   </footer>
 </template>
