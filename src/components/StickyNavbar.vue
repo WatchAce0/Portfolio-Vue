@@ -2,7 +2,7 @@
   <div :class="{ 'top-0 z-50  dark:bg-black': isSticky }">
     <nav class="container mx-auto py-4 flex justify-between items-center">
       <!-- Title -->
-      <div class="text-xl text-center font-bold">JoeDiGioia.com</div>
+      <div class="text-xl text-center mx-4 font-bold">JoeDiGioia.com</div>
 
       <!-- Dark Mode Switch -->
       <div class="flex items-center m-4 space-x-2">
