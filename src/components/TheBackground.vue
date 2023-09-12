@@ -4,7 +4,12 @@
       <h2 class="text-4xl text-center font-bold mb-8">Image Goes Here</h2>
       <div class="flex justify-center space-x-4 mt-8">
         <!-- Download CV Button -->
-        <a href="/path_to_your_cv.pdf" download><i class="fas fa-file"></i> </a>
+        <a
+          href="https://drive.google.com/file/d/17Ru3NQrSKAv_zzCt6GKFlQm_EeJRERwa/view?usp=sharing"
+          target="_blank"
+          download
+          ><i class="fas fa-file"></i>
+        </a>
 
         <!-- Email Button -->
 

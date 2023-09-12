@@ -8,7 +8,6 @@
     <TheBackground id="background" />
 
     <MyProjects id="projects" />
-    <MySkills id="skills" />
     <TheFooter />
   </div>
 </template>
@@ -16,7 +15,6 @@
 <script>
 import StickyNavbar from "./components/StickyNavbar.vue";
 import MyProjects from "./components/MyProjects.vue"; // Renamed from Projects
-import MySkills from "./components/MySkills.vue"; // Renamed from Skills
 import TheBackground from "./components/TheBackground.vue"; // Renamed from Background
 import TheFooter from "./components/TheFooter.vue";
 
@@ -24,7 +22,6 @@ export default {
   components: {
     StickyNavbar,
     MyProjects,
-    MySkills,
     TheBackground,
     TheFooter,
   },
