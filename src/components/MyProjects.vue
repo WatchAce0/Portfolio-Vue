@@ -13,13 +13,11 @@
             <div class="absolute inset-0 bg-black opacity-50"></div>
             <h3 class="relative text-2xl mb-4 text-white">What Echoes Back</h3>
             <p class="relative text-white">
-              A digital collectible platform offering in-app currency and
-              interactive card collections. Developed using React, Next.js,
-              Firebase, Tailwind CSS, and the Stripe API. Hosted on Vercel.
+              A digital collectible platform offering in-app currency, idle game
+              rewarding currency and interactive card collections. Developed
+              using React, Next.js, Firebase, Tailwind CSS, and the Stripe API.
+              Hosted on Vercel.
             </p>
-            <div
-              class="tech-logos mt-2 flex justify-center items-center h-2rem"
-            ></div>
           </div>
         </a>
 
@@ -32,8 +30,8 @@
             <div class="absolute inset-0 bg-black opacity-50"></div>
             <h3 class="relative text-2xl mb-4 text-white">Resovar</h3>
             <p class="relative text-white">
-              A MIDI generation platform tailored for music producers, providing
-              memberships and MIDI creation tools. Developed using React,
+              A MIDI generation platform tailored for modern music producers,
+              providing memberships and in-app currency. Developed using React,
               Next.js, Firebase, Tailwind CSS, and the Stripe API. Hosted on
               Netlify.
             </p>
