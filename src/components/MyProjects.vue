@@ -14,7 +14,8 @@
             <h3 class="relative text-2xl mb-4 text-white">What Echoes Back</h3>
             <p class="relative text-white">
               A digital collectible platform offering in-app currency and
-              interactive card collections.
+              interactive card collections. Developed using React, Next.js,
+              Firebase, Tailwind CSS, and the Stripe API. Hosted on Vercel.
             </p>
             <div
               class="tech-logos mt-2 flex justify-center items-center h-2rem"
@@ -32,7 +33,9 @@
             <h3 class="relative text-2xl mb-4 text-white">Resovar</h3>
             <p class="relative text-white">
               A MIDI generation platform tailored for music producers, providing
-              memberships and MIDI creation tools.
+              memberships and MIDI creation tools. Developed using React,
+              Next.js, Firebase, Tailwind CSS, and the Stripe API. Hosted on
+              Netlify.
             </p>
           </div>
         </a>
@@ -51,8 +54,9 @@
             <div class="absolute inset-0 bg-black opacity-50"></div>
             <h3 class="relative text-2xl mb-4 text-white">Movie Info Quick</h3>
             <p class="relative text-white">
-              A quick and efficient movie details fetcher that pulls data from
-              the Online Movie Database.
+              A quick and efficient movie details fetcher. Developed using
+              Svelte, Tailwind CSS, and the Online Movie Database API. Hosted on
+              Netlify.
             </p>
           </div>
         </a>
@@ -66,7 +70,8 @@
             <h3 class="relative text-2xl mb-4 text-white">Key & BPM Finder</h3>
             <p class="relative text-white">
               An instant song analyzer, retrieving key and BPM for any Spotify
-              track.
+              track. Developed using React, Tailwind CSS, and the Spotify API.
+              Hosted on Netlify.
             </p>
           </div>
         </a>
@@ -81,8 +86,9 @@
               Cold, Warm or Hot?
             </h3>
             <p class="relative text-white">
-              A real-time temperature checker providing data based on
-              user-specified zip codes.
+              A temperature checker providing data based on a user specified
+              zipcode. Developed using Vue.js, Tailwind CSS, and the OpenWeather
+              API. Hosted on Netlify.
             </p>
           </div>
         </a>
