@@ -1,7 +1,14 @@
 <template>
   <section id="background" class="">
     <div :class="{ 'bg-white dark:bg-black': isDark }">
-      <h2 class="text-4xl text-center font-bold mb-8">Image Goes Here</h2>
+      <h2 class="text-4xl text-center font-bold mb-8">
+        <div class="grid place-items-center">
+          <div
+            class="w-64 h-64 bg-center bg-cover rounded-full"
+            style="background-image: url('/profile.jpeg')"
+          ></div>
+        </div>
+      </h2>
       <div class="flex justify-center space-x-4 mt-8">
         <!-- Download CV Button -->
         <a
@@ -38,8 +45,8 @@
         </a>
       </div>
       <p class="text-center text-xl p-8">
-        Hey, I'm Joe DiGioia a Full Stack Developer and Graphic Designer from
-        Pittsburgh, PA. <br />
+        Hey, I'm <b>Joe DiGioia</b>, a Full Stack Developer and Graphic Designer
+        from Pittsburgh, PA. <br />
         I enjoy creating new user experiences through a mix of modern design and
         web development.
       </p>

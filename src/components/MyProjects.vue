@@ -81,7 +81,7 @@
           >
             <div class="absolute inset-0 bg-black opacity-50"></div>
             <h3 class="relative text-2xl mb-4 text-white">
-              Cold, Warm or Hot?
+              Temperature Finder
             </h3>
             <p class="relative text-white">
               A temperature checker providing data based on a user specified
