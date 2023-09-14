@@ -1,5 +1,5 @@
 <template>
-  <footer class="dark:bg-black text-white mt-8">
+  <footer class="dark:bg-black text-white pb-8 mt-8">
     <div
       class="container font-bold mx-auto text-center text-gray-900 dark:text-gray-100"
     >
