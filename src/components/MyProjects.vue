@@ -90,6 +90,31 @@
             </p>
           </div>
         </a>
+
+        <a
+          :href="project6.link"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="md:col-span-3"
+        >
+          <div
+            class="relative bg-white dark:bg-gray-800 bg-cover bg-center p-8 rounded shadow transform hover:scale-105 transition-transform"
+            :style="{ backgroundImage: `url(${project6.image})` }"
+          >
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <h3 class="relative text-2xl mb-4 text-white">
+              Deep-Learning PyTorch Flower Classifier
+            </h3>
+            <p class="relative text-white">
+              This project is a deep learning-based flower classification system
+              built using PyTorch. The model is trained on a dataset containing
+              images of five different types of flowers: Daisy, Dandelion, Rose,
+              Sunflower, and Tulip. The project also includes a web demo built
+              with Flask, allowing users to upload an image and get a prediction
+              in real-time. Hosted on Google Cloud Platform.
+            </p>
+          </div>
+        </a>
       </div>
     </div>
   </section>
@@ -122,6 +147,11 @@ export default {
         image:
           "https://th.bing.com/th/id/R.a9f3ad49a2569ba3ea4daeeac93ec90a?rik=Sy2nJ8n1dU69fQ&pid=ImgRaw&r=0",
         link: "https://jovial-sfogliatella-369c77.netlify.app/",
+      },
+      project6: {
+        image:
+          "https://th.bing.com/th/id/R.edfaf8e35032aea428c102199356ca34?rik=nUUZWyPdNFMpMA&pid=ImgRaw&r=0",
+        link: "https://flowerpydemo.ue.r.appspot.com/",
       },
     };
   },
