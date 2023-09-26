@@ -4,25 +4,7 @@
       <h2 class="text-4xl font-bold mb-8 text-gray-900 dark:text-gray-100">
         Projects
       </h2>
-      <div class="flex flex-cols-1 m-8">
-        <!-- Project 7: Soconu -->
-        <a :href="project7.link" target="_blank" rel="noopener noreferrer">
-          <div
-            class="relative bg-white dark:bg-gray-800 bg-cover bg-center p-8 rounded shadow transform hover:scale-105 transition-transform"
-            :style="{ backgroundImage: `url(${project7.image})` }"
-          >
-            <div class="absolute inset-0 bg-black opacity-50"></div>
-            <h3 class="relative text-3xl mb-4 text-white">Soconu</h3>
-            <p class="relative text-white">
-              A puzzle game where you have 3 attempts to solve a 3x3 grid of
-              numbers, using feedback from your previous guesses to determine
-              the final answer. Complete with leaderboards, stat tracking and
-              local storage for a persistent game state. Developed using React,
-              Next.js, Firebase, Tailwind CSS. Hosted on Netlify.
-            </p>
-          </div>
-        </a>
-      </div>
+
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <a :href="project1.link" target="_blank" rel="noopener noreferrer">
           <div
