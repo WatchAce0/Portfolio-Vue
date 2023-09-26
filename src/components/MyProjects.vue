@@ -4,6 +4,24 @@
       <h2 class="text-4xl font-bold mb-8 text-gray-900 dark:text-gray-100">
         Projects
       </h2>
+      <div class="flex flex-cols-1 m-8">
+        <a :href="project7.link" target="_blank" rel="noopener noreferrer">
+          <div
+            class="relative bg-white dark:bg-gray-800 bg-cover bg-center p-8 rounded shadow transform hover:scale-105 transition-transform"
+            :style="{ backgroundImage: `url(${project7.image})` }"
+          >
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <h3 class="relative text-3xl mb-4 text-white">Soconu</h3>
+            <p class="relative text-white">
+              A puzzle game where you have 3 attempts to solve a 3x3 grid of
+              numbers, using feedback from your previous guesses to determine
+              the final answer. Complete with leaderboards, stat tracking and
+              local storage for a persistent game state. Developed using React,
+              Next.js, Firebase, Tailwind CSS. Hosted on Netlify.
+            </p>
+          </div>
+        </a>
+      </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <a :href="project1.link" target="_blank" rel="noopener noreferrer">
           <div
@@ -11,7 +29,7 @@
             :style="{ backgroundImage: `url(${project1.image})` }"
           >
             <div class="absolute inset-0 bg-black opacity-50"></div>
-            <h3 class="relative text-2xl mb-4 text-white">What Echoes Back</h3>
+            <h3 class="relative text-3xl mb-4 text-white">What Echoes Back</h3>
             <p class="relative text-white">
               A digital collectible platform offering in-app currency, idle game
               rewarding currency and interactive card collections. Developed
@@ -28,7 +46,7 @@
             :style="{ backgroundImage: `url(${project2.image})` }"
           >
             <div class="absolute inset-0 bg-black opacity-50"></div>
-            <h3 class="relative text-2xl mb-4 text-white">Resovar</h3>
+            <h3 class="relative text-3xl mb-4 text-white">Resovar</h3>
             <p class="relative text-white">
               A MIDI generation platform tailored for modern music producers,
               providing memberships and in-app currency. Developed using React,
@@ -50,7 +68,7 @@
             :style="{ backgroundImage: `url(${project3.image})` }"
           >
             <div class="absolute inset-0 bg-black opacity-50"></div>
-            <h3 class="relative text-2xl mb-4 text-white">Movie Info Quick</h3>
+            <h3 class="relative text-3xl mb-4 text-white">Movie Info Quick</h3>
             <p class="relative text-white">
               A quick and efficient movie details fetcher. Developed using
               Svelte, Tailwind CSS, and the Online Movie Database API. Hosted on
@@ -65,7 +83,7 @@
             :style="{ backgroundImage: `url(${project4.image})` }"
           >
             <div class="absolute inset-0 bg-black opacity-50"></div>
-            <h3 class="relative text-2xl mb-4 text-white">Key & BPM Finder</h3>
+            <h3 class="relative text-3xl mb-4 text-white">Key & BPM Finder</h3>
             <p class="relative text-white">
               An instant song analyzer, retrieving key and BPM for any Spotify
               track. Developed using React, Tailwind CSS, and the Spotify API.
@@ -80,7 +98,7 @@
             :style="{ backgroundImage: `url(${project5.image})` }"
           >
             <div class="absolute inset-0 bg-black opacity-50"></div>
-            <h3 class="relative text-2xl mb-4 text-white">
+            <h3 class="relative text-3xl mb-4 text-white">
               Temperature Finder
             </h3>
             <p class="relative text-white">
@@ -102,7 +120,7 @@
             :style="{ backgroundImage: `url(${project6.image})` }"
           >
             <div class="absolute inset-0 bg-black opacity-50"></div>
-            <h3 class="relative text-2xl mb-4 text-white">
+            <h3 class="relative text-3xl mb-4 text-white">
               Deep-Learning PyTorch Flower Classifier
             </h3>
             <p class="relative text-white">
@@ -152,6 +170,11 @@ export default {
         image:
           "https://th.bing.com/th/id/R.edfaf8e35032aea428c102199356ca34?rik=nUUZWyPdNFMpMA&pid=ImgRaw&r=0",
         link: "https://flowerpydemo.ue.r.appspot.com/",
+      },
+      project7: {
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/solvio-c55ad.appspot.com/o/soconu1.png?alt=media&token=07b07ea8-77e9-4e87-a978-725a08302b8d",
+        link: "https://soconu.com/",
       },
     };
   },
