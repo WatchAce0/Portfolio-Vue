@@ -5,6 +5,7 @@
         Projects
       </h2>
       <div class="flex flex-cols-1 m-8">
+        <!-- Project 7: Soconu -->
         <a :href="project7.link" target="_blank" rel="noopener noreferrer">
           <div
             class="relative bg-white dark:bg-gray-800 bg-cover bg-center p-8 rounded shadow transform hover:scale-105 transition-transform"
