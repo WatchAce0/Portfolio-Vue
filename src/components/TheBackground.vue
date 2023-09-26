@@ -5,7 +5,7 @@
         <div class="grid place-items-center">
           <div
             class="w-64 h-64 bg-center bg-cover rounded-full"
-            style="background-image: url('/profile.jpeg')"
+            style="background-image: url('/new_profile.jpg')"
           ></div>
         </div>
       </h2>
