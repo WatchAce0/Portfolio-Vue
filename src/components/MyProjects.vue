@@ -49,14 +49,7 @@ export default {
             "A MIDI generation platform tailored for modern music producers, providing memberships and in-app currency. Developed using React, Next.js, Firebase, Tailwind CSS, and the Stripe API. Hosted on Netlify.",
           link: "https://resovar.com/",
         },
-        {
-          title: "Deep-Learning PyTorch Flower Classifier",
-          image:
-            "https://th.bing.com/th/id/R.edfaf8e35032aea428c102199356ca34?rik=nUUZWyPdNFMpMA&pid=ImgRaw&r=0",
-          description:
-            "This project is a deep learning-based flower classification system built using PyTorch. The model is trained on a dataset containing images of five different types of flowers: Daisy, Dandelion, Rose, Sunflower, and Tulip. The project also includes a web demo built with Flask, allowing users to upload an image and get a prediction in real-time. Hosted on Google Cloud Platform.",
-          link: "https://flowerpydemo.ue.r.appspot.com/",
-        },
+
         {
           title: "Movie Info Quick",
           image: "https://wallpapercave.com/wp/wp1945939.jpg",
@@ -78,6 +71,14 @@ export default {
           description:
             "A temperature checker providing data based on a user specified zipcode. Developed using Vue.js, Tailwind CSS, and the OpenWeather API. Hosted on Netlify.",
           link: "https://jovial-sfogliatella-369c77.netlify.app/",
+        },
+        {
+          title: "Deep-Learning PyTorch Flower Classifier",
+          image:
+            "https://th.bing.com/th/id/R.edfaf8e35032aea428c102199356ca34?rik=nUUZWyPdNFMpMA&pid=ImgRaw&r=0",
+          description:
+            "This project is a deep learning-based flower classification system built using PyTorch. The model is trained on a dataset containing images of five different types of flowers: Daisy, Dandelion, Rose, Sunflower, and Tulip. The project also includes a web demo built with Flask, allowing users to upload an image and get a prediction in real-time. Hosted on Google Cloud Platform.",
+          link: "https://flowerpydemo.ue.r.appspot.com/",
         },
       ],
     };
