@@ -11,10 +11,7 @@
       </h2>
       <div class="flex justify-center space-x-4 mt-8">
         <!-- Download CV Button -->
-        <a
-          href="https://drive.google.com/file/d/17Ru3NQrSKAv_zzCt6GKFlQm_EeJRERwa/view?usp=sharing"
-          target="_blank"
-          download
+        <a href="/JDiGioia_Resume_2023.pdf" target="_blank" download
           ><i class="fas fa-file"></i>
         </a>
 
