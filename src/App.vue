@@ -30,7 +30,7 @@ onBeforeUnmount(() => { observer?.disconnect(); sectionObserver?.disconnect(); c
       <a href="#experience" :class="{ active: activeSection === 'experience' }" @click="navigate('experience')">Experience</a>
       <a href="#about" :class="{ active: activeSection === 'about' }" @click="navigate('about')">About</a>
     </nav>
-    <a class="header-contact" href="mailto:joe.p.digioia@gmail.com">Say hello <span>↗</span></a>
+    <div class="header-right"><a class="header-contact" href="mailto:joe.p.digioia@gmail.com">Say hello <span>↗</span></a><a class="header-avatar" href="#about" aria-label="About Joe" @click="navigate('about')"><img src="/joe-pixel.png" alt="Joe’s pixel avatar" width="40" height="40"></a></div>
     <button class="menu-button" :aria-expanded="menuOpen" aria-controls="mobile-menu" @click="menuOpen = !menuOpen">{{ menuOpen ? 'Close −' : 'Menu +' }}</button>
   </header>
 
@@ -63,7 +63,7 @@ onBeforeUnmount(() => { observer?.disconnect(); sectionObserver?.disconnect(); c
         <a class="project-visual street-visual" href="https://sidestreetpgh.com" target="_blank" rel="noopener noreferrer" aria-label="Explore Side Street (opens in a new tab)">
           <div class="visual-top"><span>SIDE STREET / PITTSBURGH</span><span class="live-pill"><i></i> LIVE PROJECT</span></div>
           <div class="street-map" aria-hidden="true"><div class="river"></div><div class="map-road road-one"></div><div class="map-road road-two"></div><div class="map-road road-three"></div><span class="map-label label-north">NORTH SIDE</span><span class="map-label label-strip">STRIP DISTRICT</span><span class="map-label label-downtown">DOWNTOWN</span><span class="map-pin pin-one">✳</span><span class="map-pin pin-two">↗</span><span class="map-pin pin-three">+</span></div>
-          <div class="street-title">SIDE<br><span>STREET</span><b>↗</b></div><div class="visual-bottom"><span>GOOD SPOTS. GREAT DEALS.</span><span>40.4406° N · 79.9959° W</span></div>
+          <div class="street-title"><img src="/side-street-mark.svg" alt="" width="64" height="64"><span>SIDE<br>STREET</span><b>↗</b></div><div class="visual-bottom"><span>GOOD SPOTS. GREAT DEALS.</span><span>40.4406° N · 79.9959° W</span></div>
         </a>
         <div class="project-info"><div class="project-number">01</div><div><h3>Side Street</h3><p>A better answer to “what should we do?”</p></div><a class="round-link" href="https://sidestreetpgh.com" target="_blank" rel="noopener noreferrer" aria-label="Visit Side Street">↗</a></div>
         <div class="project-details"><p>A map-first guide to Pittsburgh's local businesses, deals, and events. Find a new spot, see what's happening nearby, and spend less time hunting through social feeds.</p><div class="project-tags"><span>Product & UX</span><span>Development</span><span>Brand & artwork</span></div></div>
@@ -71,8 +71,9 @@ onBeforeUnmount(() => { observer?.disconnect(); sectionObserver?.disconnect(); c
       <article class="project project-soconu reveal">
         <a class="project-visual soconu-visual" href="https://www.soconu.com" target="_blank" rel="noopener noreferrer" aria-label="Play Soconu (opens in a new tab)">
           <div class="visual-top"><span>SOCONU / NUMBER PUZZLE</span><span class="live-pill"><i></i> LIVE PROJECT</span></div>
-          <div class="soconu-word">soconu<span>✳</span></div><div class="number-grid" aria-hidden="true"><span>4</span><span class="low">2<small>↑</small></span><span>8</span><span class="high">7<small>↓</small></span><span class="correct">5<small>✓</small></span><span class="low">1<small>↑</small></span><span>3</span><span class="high">9<small>↓</small></span><span>6</span></div>
-          <div class="visual-bottom"><span>NINE NUMBERS. THREE CHANCES.</span><span>ONE MORE TRY ↗</span></div>
+          <div class="soconu-particles" aria-hidden="true"><span v-for="n in 44" :key="n" :style="{left: ((n * 37) % 96 + 2) + '%', top: ((n * 23) % 90 + 4) + '%', fontSize: (6 + (n % 5) * 2) + 'px', opacity: .3 + (n % 6) / 9, animationDelay: -(n % 8) + 's'}">{{ (n * 7) % 10 }}</span></div>
+          <div class="soconu-live-brand"><span class="soconu-live-title">Soconu</span><div class="soconu-live-nav"><span>How to Play</span><span>Leaderboard</span></div><span class="soconu-play-label">Play</span></div>
+          <div class="visual-bottom"><span>NINE NUMBERS. THREE CHANCES.</span><span>PLAY SOCONU ↗</span></div>
         </a>
         <div class="project-info"><div class="project-number">02</div><div><h3>Soconu</h3><p>Simple rules. A stubborn little challenge.</p></div><a class="round-link" href="https://www.soconu.com" target="_blank" rel="noopener noreferrer" aria-label="Play Soconu">↗</a></div>
         <div class="project-details"><p>Three attempts. A 3×3 grid. Color feedback tells you whether to go higher or lower. A number puzzle built around the very reasonable lie: “Okay, just one more.”</p><div class="project-tags"><span>Game design</span><span>UI & interaction</span><span>Development</span></div></div>
